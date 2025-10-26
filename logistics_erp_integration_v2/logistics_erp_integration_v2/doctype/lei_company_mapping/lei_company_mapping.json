@@ -4,6 +4,7 @@
  "creation": "2025-10-25 20:50:44.918002",
  "default_view": "List",
  "doctype": "DocType",
+ "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "company"
@@ -21,7 +22,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-10-25 20:55:22.762201",
+ "modified": "2025-10-26 10:38:59.789229",
  "modified_by": "Administrator",
  "module": "Logistics Erp Integration V2",
  "name": "LEI Company Mapping",
