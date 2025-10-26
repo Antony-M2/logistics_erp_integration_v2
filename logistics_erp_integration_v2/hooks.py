@@ -108,9 +108,9 @@ app_license = "MIT"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+override_doctype_class = {
+	"Customize Form": "logistics_erp_integration_v2.overrides.customize_form.CustomCustomizeForm"
+}
 
 # Document Events
 # ---------------
