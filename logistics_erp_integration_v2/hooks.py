@@ -108,11 +108,11 @@ app_license = "MIT"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-# 	"Customize Form": "logistics_erp_integration_v2.overrides.customize_form.CustomCustomizeForm",
-# 	"User": "logistics_erp_integration_v2.overrides.user.CustomUser",
-# 	"Customer": "logistics_erp_integration_v2.overrides.customer.CustomCustomer"
-# }
+override_doctype_class = {
+	"Customize Form": "logistics_erp_integration_v2.overrides.customize_form.CustomCustomizeForm",
+	"User": "logistics_erp_integration_v2.overrides.user.CustomUser",
+	"Customer": "logistics_erp_integration_v2.overrides.customer.CustomCustomer"
+}
 
 # Document Events
 # ---------------
