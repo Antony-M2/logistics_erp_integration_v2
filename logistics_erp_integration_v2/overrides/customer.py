@@ -13,7 +13,7 @@ class CustomCustomer(Customer):
             "custom_company",
             self.doctype
         )
-        compay_details = [company.__dict__ for company in self.custom_compay]
+        compay_details = [company.__dict__ for company in self.custom_company]
         check_dublicate_value_details(
             compay_details,
             {'company': 'Company'}
