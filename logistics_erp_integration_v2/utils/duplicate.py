@@ -36,7 +36,7 @@ def check_dublicate_value_details(data: List[Dict], key: Dict[str, str]) -> List
             duplicate_fields.append(field_name)
             duplicates_str = ", ".join(set(duplicates))
             frappe.throw(
-                f"{field_label}: {duplicates_str} has duplicates in the field `{field_label}`",
+                f"{field_label}: {duplicates_str} has duplicates in the field `{field_label}`.<br>Please remove duplicates.",
                 title="Duplicate Entry Found"
             )
 

@@ -13,7 +13,8 @@ class CustomCustomer(Customer):
             "custom_company",
             self.doctype
         )
+        compay_details = [company.__dict__ for company in self.custom_compay]
         check_dublicate_value_details(
-            previous_company_mapping_details,
+            compay_details,
             {'company': 'Company'}
         )
