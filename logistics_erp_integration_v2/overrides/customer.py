@@ -1,5 +1,7 @@
 from erpnext.selling.doctype.customer.customer import Customer
-from logistics_erp_integration_v2.utils.duplicate import check_dublicate_value_details
+from logistics_erp_integration_v2.utils.duplicate import (
+    check_dublicate_value_details, get_child_table_changed_and_newly_added_details
+)
 from logistics_erp_integration_v2.utils.auto_user_permission import get_previous_company_mapping_details
 
 class CustomCustomer(Customer):
@@ -18,3 +20,4 @@ class CustomCustomer(Customer):
             compay_details,
             {'company': 'Company'}
         )
+        new_entries, updated_entries, delete_entries = get_child_table_changed_and_newly_added_details(previous_company_mapping_details, compay_details)
